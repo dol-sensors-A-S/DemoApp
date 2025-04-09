@@ -1,0 +1,19 @@
+meta {
+  name: Update sensor
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{baseUrl}}/api/sensors/{{macAddress}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "DevEui": "{{devEui}}",
+    "Name": "My new sensor",
+    "SampleRate": 300
+  }
+}

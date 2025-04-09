@@ -1,0 +1,20 @@
+meta {
+  name: Claim device
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/devices/claim
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "DeviceType": "IDOL64",
+    "Key": "{{key}}",
+    "MacAddress": "{{macAddress}}",
+    "DeviceName": "My test device"
+  }
+}

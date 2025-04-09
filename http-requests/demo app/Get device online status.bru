@@ -1,0 +1,15 @@
+meta {
+  name: Get device online status
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/api/devices/online?deviceIds={{macAddress}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  deviceIds: {{macAddress}}
+}

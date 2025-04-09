@@ -1,0 +1,17 @@
+meta {
+  name: export device data
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{baseUrl}}/api/data/{{macAddress}}/export
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "startTime": "2024-09-18T09:44:38.070Z"
+  }
+}

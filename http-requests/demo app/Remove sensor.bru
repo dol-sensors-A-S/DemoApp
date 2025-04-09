@@ -1,0 +1,11 @@
+meta {
+  name: Remove sensor
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/api/sensors/{{macAddress}}/{{devEui}}
+  body: none
+  auth: inherit
+}

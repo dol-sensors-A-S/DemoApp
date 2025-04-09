@@ -1,0 +1,11 @@
+meta {
+  name: Delete device claim
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/api/devices/claim/{{macAddress}}
+  body: none
+  auth: inherit
+}

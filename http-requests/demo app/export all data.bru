@@ -1,0 +1,17 @@
+meta {
+  name: export all data
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{baseUrl}}/api/data/export
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "startTime": "2024-09-18T09:44:38.070Z"
+  }
+}

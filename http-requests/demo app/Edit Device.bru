@@ -1,0 +1,17 @@
+meta {
+  name: Edit Device
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/devices/{{macAddress}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "deviceName": "new device name"
+  }
+}

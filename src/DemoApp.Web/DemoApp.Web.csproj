@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <AssemblyName>DemoApp.Web</AssemblyName>
+        <RootNamespace>DemoApp.Web</RootNamespace>
+      <UserSecretsId>4ae7542d-98f1-4933-ae73-f4a94882f978</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DemoApp.Core\DemoApp.Core.csproj" />
+      <ProjectReference Include="..\ServiceDefaults\ServiceDefaults.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0" />
+      <PackageReference Include="CsvHelper" Version="33.0.1" />
+      <PackageReference Include="FluentValidation" Version="11.11.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="3.1.6" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="appsettings.local.json" />
+    </ItemGroup>
+
+</Project>

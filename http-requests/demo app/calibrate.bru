@@ -1,0 +1,11 @@
+meta {
+  name: calibrate
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{baseUrl}}/api/devices/{{macAddress}}/calibrate
+  body: none
+  auth: inherit
+}

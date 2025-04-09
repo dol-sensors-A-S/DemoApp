@@ -1,0 +1,11 @@
+meta {
+  name: get image
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{baseUrl}}/api/devices/{{macAddress}}/image
+  body: none
+  auth: inherit
+}

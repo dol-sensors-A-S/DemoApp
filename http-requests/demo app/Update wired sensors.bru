@@ -1,0 +1,26 @@
+meta {
+  name: Update wired sensors
+  type: http
+  seq: 18
+}
+
+put {
+  url: {{baseUrl}}/api/sensors/{{macAddress}}/wired
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "port": 1,
+      "wiredSensorType": "DOL139",
+      "samplingRate": 120
+    },
+    {
+      "port": 2,
+      "wiredSensorType": "DOL139",
+      "samplingRate": 120
+    }
+  ]
+}

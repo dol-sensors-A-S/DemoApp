@@ -1,0 +1,15 @@
+meta {
+  name: Get device data
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/api/data/{{macAddress}}?startTime=2024-08-23T05:04:18.070Z
+  body: none
+  auth: inherit
+}
+
+params:query {
+  startTime: 2024-08-23T05:04:18.070Z
+}
