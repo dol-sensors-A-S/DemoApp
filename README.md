@@ -14,7 +14,6 @@ The users in this app is only something this app uses and are aware off. The dol
 
 # Technical stuff
 
-![deployment status](https://github.com/dol-sensors-A-S/dol.IoT.DemoApp/actions/workflows/azure-dev.yml/badge.svg)
 
 This project uses [aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview) to orchestrate the different smaller services and wire them together.
 
